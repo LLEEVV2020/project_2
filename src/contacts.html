@@ -1,79 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru" class="page">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
+@include('partials/head.html')
 
-<body>
+<body class="page__body">
+  <div class="site-container">
+    @include('partials/header.html')
+    <main class="main">
+      @include('partials/contacts.html')
+    </main>
 
-  <!-- вставите ваш header -->
-
-
-
-  <main class="main">
-    <section class="contacts">
-        <div class="contacts__inner">
-          <div class="container">
-
-            <div class="col-md-12 col-lg-6">
-
-              <div class="contacts__info">
-                <h2 class="h2 text-light ">Контакты АО «ИРТЕХ»
-                </h2>
-
-                <h3 class="h3">
-                  Администрация:
-                </h3>
-                <a class="p" href="mailto:nsinfo@ir-tech.ru">nsinfo@ir-tech.ru</a>
-
-                <h3 class="h3">
-                  Бухгалтерия, Продажи, Партнёры:
-                </h3>
-                <a class="p" href="mailto:s@ir-tech.ru">s@ir-tech.ru</a>
-
-                <h3 class="h3">
-                  Адрес офиса:
-                </h3>
-                <address class="p">443068 г. Самара, ул. Московское шоссе, д. 4, строение 4, этаж 12</address>
-                <div>
-                  <h3>Служба технической поддержки:</h3>
-                  <a href="mailto:help@ir-tech.ru">help@ir-tech.ru</a>
-                  <button>Запросить поддержку</button>
-                </div>
-                <div class="map"> </div>
-              </div>
-
-            </div>
-            <div class="col-md-12 col-lg-6">
-
-              <div class="contacts__form">
-                <h4>Где найти ответы на вопросы:</h4>
-                <p> <b> Руководство пользователя, встроенная системная справка</b> – это первые источники, к которым нужно
-                  обратиться, если у Вас возникнут вопросы по работе с программными продуктами. <b> Информацию о текущих
-                  обновлениях, ответы на часто задаваемые вопросы, методические материалы </b> находятся на страницах поддержки
-                  каждого продукта (блок справа — быстрый переход).<b>Индивидуальную консультацию</b>  можно получить,
-                  воспользовавшись формой обратной связи. Специалисты службы поддержки ответят Вам в течение того же
-                  рабочего дня.</p>
-
-                  <form>
-
-                  </form>
-              </div>
-
-            </div>
-
-
-        </div>
-      </div>
-
-    </section>
-  </main>
-
-
+    @include('partials/modal.html')
+    @include('partials/footer.html')
+  </div>
 </body>
 
 </html>

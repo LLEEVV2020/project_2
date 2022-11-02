@@ -60,6 +60,7 @@
     "graph-modal": "^1.0.4",
     "graph-tabs": "^1.0.0",
     "inputmask": "^5.0.7",
+    "jquery.fancybox": "^2.1.5",
     "just-validate": "^3.3.3",
     "rellax": "^1.12.1",
     "simplebar": "^5.3.6",

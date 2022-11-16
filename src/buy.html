@@ -7,7 +7,17 @@
   <div class="site-container">
     @include('partials/header.html')
     <main class="main">
-      @include('partials/breadcrumb/breadcrumb.html')
+      <div class="container  my-2">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+
+            <li class="breadcrumb-item"><a href="/">Главная</a></li>
+            <li class="breadcrumb-item"><a href="about.html">О компании</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Как купить</li>
+
+          </ol>
+        </nav>
+      </div>
       @include('partials/buy.html')
 
 

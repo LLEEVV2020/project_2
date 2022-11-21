@@ -82,3 +82,30 @@ $('.certificates__slider').slick({
     }
   ]
 });
+
+
+$(document).ready(function() {
+
+  var element = $(".fixed_block");
+  var height_el = element.offset().top;
+
+  $(".fixed_block_position").css({
+    "width": element.outerWidth(),
+    "height": element.outerHeight()
+  });
+
+  $(window).scroll(function() {
+
+    if($(window).scrollTop() > height_el) {
+
+      element.addClass("fixed");
+
+    } else {
+
+      element.removeClass("fixed");
+
+    }
+
+  });
+
+});

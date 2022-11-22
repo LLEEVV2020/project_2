@@ -36,11 +36,6 @@ body{
     font-weight: 400;
   }
 
-  input[type="text"], textarea {
-    border: none;
-    background: #F2F3F7;
-    border-radius: 8px !important;
-  }
 
   .btn{
     background: #00A1E1;
@@ -48,21 +43,29 @@ body{
     color: #fff;
   }
 
-  .attach-files{
-    .btn{
-      background: #fff;
-      color: #00A1E1;
-      border: 1px solid #00A1E1;
+}
 
-    }
-    span{
-      font-size: 80%;
-    }
+
+input[type="text"], textarea {
+  border: none;
+  background: #F2F3F7;
+  border-radius: 8px !important;
+}
+
+.attach-files{
+  .btn{
+    background: #fff;
+    color: #00A1E1;
+    border: 1px solid #00A1E1;
+
   }
-  .form-select{
-    width: 100%;
-    background: #F2F3F7;
-    border-radius: 7px;
-    border-color: #F2F3F7;
+  span{
+    font-size: 80%;
   }
+}
+.form-select{
+  width: 100%;
+  background: #F2F3F7;
+  border-radius: 7px;
+  border-color: #F2F3F7;
 }

@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  <div class="site-container">
+    @include('partials/header.html')
+
+    <main class="main">
+      <main class="main">
+
+
+        <div class="container">
+          <h2 class="text-center">Заголовоки</h2>
+
+          <h1>Заголовок 1</h1>
+          <h2>Заголовок 2</h2>
+          <h3>Заголовок 3</h3>
+          <h4>Заголовок 4</h4>
+          <h5>Заголовок 5</h5>
+          <h6>Заголовок 6</h6>
+
+          <br class="mb-5">
+
+          <h2 class="text-center mb-4">Элементы формы</h2>
+          <div class="col-xs-2 mb-4">
+            <label for="" class="text-muted">select</label>
+          </div>
+
+          <div class="col-xs-10 mb-4">
+            <select class="form-select form-control" name="---" id="">
+              <option value="----">----</option>
+              <option value="Значение 1">Значение 1</option>
+              <option value="Значение 2">Значение 2</option>
+            </select>
+          </div>
+
+
+
+          <div class="col-xs-2 mb-4">
+              <label for="" class="text-muted">Поле</label>
+            </div>
+            <div class="col-xs-10 mb-4">
+              <input type="text" class="form-control " placeholder="" >
+            </div>
+
+            <div class="col-xs-2 mb-4">
+              <label for="" class="text-muted">textarea</label>
+            </div>
+            <div class="col-xs-10 mb-4">
+              <textarea class="form-control " placeholder="" ></textarea>
+            </div>
+
+
+            <input type="checkbox" name="check" value="" checked="">
+
+            <input type="radio" name="a" value="" checked="">
+            <input type="radio" name="a" value="" >
+            <div class="attach-files">
+              <div class="btn">Выберите файл</div>
+              <span>приложенный файл...</span>
+            </div>
+
+            <br class="mb-5">
+            <h2 class="text-center mb-4">Реализация формы</h2>
+            <div class="col-sm-12 col-md-6 col-lg-6 pr-5">
+
+
+              <div class="form">
+                <h3 class="text-center mb-5">Запрос на сотрудничество</h3>
+
+                <div class="input-group d-flex align-items-center mb-4">
+                  <label class="col-sm-12 col-md-6 col-lg-6" for="">Ваше имя:</label>
+                  <input type="text" class="form-control col-sm-12 col-md-6 col-lg-6" placeholder="" aria-describedby="basic-addon1">
+                </div>
+
+                <div class="input-group d-flex align-items-center mb-4">
+                  <label class="col-sm-12 col-md-6 col-lg-6" for="">Ваш е-майл:</label>
+                  <input type="text" class="form-control col-sm-12 col-md-6 col-lg-6" placeholder="" aria-describedby="basic-addon1">
+                </div>
+
+                <div class="input-group d-flex align-items-center mb-4">
+                  <label class="col-sm-12 col-md-6 col-lg-6" for="">Ваш номер телефона:</label>
+                  <input type="text" class="form-control col-sm-12 col-md-6 col-lg-6" placeholder="" aria-describedby="basic-addon1">
+                </div>
+
+                <div class="input-group d-flex  mb-4 ">
+                  <label class="col-sm-12 col-md-6 col-lg-6 mb-4" for="">Опишите предложение:</label>
+                  <textarea class="form-control col-sm-12 col-md-6 col-lg-6" rows="4" name="text" placeholder=""></textarea>
+                </div>
+
+                <div class="input-group d-flex align-items-center mb-4  ">
+                  <label class="col-sm-12 col-md-4 col-lg-4" for="">Прикрепить файлы:</label>
+
+                  <div class="col-sm-12 col-md-8 col-lg-8">
+                    <div class="attach-files">
+                      <div class="btn">Выберите файл</div>
+                      <span>приложенный файл...</span>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="input-group d-flex  align-items-center  justify-content-sm-between">
+                  <p><input type="checkbox" name="a" value="" checked=""> Заполняя данную форму вы даете согласие...</p>
+
+                  <button type="button" class="btn btn-default mp-5">Отправить</button>
+                </div>
+
+              </div>
+
+
+
+            </div>
+
+
+        </div>
+
+      </main>
+
+    </main>
+
+    @include('partials/modal.html')
+    @include('partials/footer.html')
+    <!-- @include('partials/content_test.html') пример include -->
+  </div>
+</body>
+
+</html>
+

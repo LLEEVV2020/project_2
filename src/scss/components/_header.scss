@@ -51,6 +51,16 @@ input[type="text"], textarea {
   background: #F2F3F7;
   border-radius: 8px !important;
 }
+.input-group-default{
+
+  input[type="text"], textarea {
+    border: 1px solid #cccccc;
+    background: #ffffff;
+    border-radius: 8px !important;
+  }
+
+
+}
 
 .attach-files{
   .btn{
@@ -68,4 +78,8 @@ input[type="text"], textarea {
   background: #F2F3F7;
   border-radius: 7px;
   border-color: #F2F3F7;
+}
+
+.dropup {
+  position: relative;
 }

@@ -10,7 +10,7 @@
       @include('partials/breadcrumb.html')
       @include('partials/innovative-solutions.html')
       @include('partials/story2.html')
-      @include('partials/story.html')
+      <!--@include('partials/story.html')-->
       @include('partials/certificates.html')
       @include('partials/open-cooperation.html')
     </main>
@@ -44,7 +44,7 @@
         sync1.owlCarousel({
           items: 1,
           slideSpeed: 2000,
-          nav: true,
+          nav: false,
           autoplay: false,
           dots: false,/** new */
           loop: true,
@@ -58,8 +58,8 @@
           })
           .owlCarousel({
 
-            dots: true,
-            nav: true,
+            dots: false,
+            nav: false,
             smartSpeed: 200,
             slideSpeed: 500,
             slideBy: slidesPerPage, //alternatively you can slide by 1, this way the active slide will stick to the first item in the second carousel

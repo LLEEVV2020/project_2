@@ -24,6 +24,8 @@
       integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
       crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+
+
     <script>
 
       $(document).ready(function () {
@@ -129,6 +131,54 @@
           sync1.data('owl.carousel').to(number, 300, true);
         });
       });
+
+      /*Сертификаты - слайдер*/
+      $('.certificates-slider').owlCarousel({
+          loop:true,
+          margin: 20,
+          nav:false,
+          responsive:{
+              0:{
+                  items:1
+              },
+              600:{
+                  items:2
+              },
+              1200:{
+                  items:3
+              }
+          }
+      });
+
+            // Initialise Carousel
+const mainCarousel = new Carousel(document.querySelector("#mainCarousel"), {
+  infinite: false,
+  Navigation: false,
+});
+
+// Initialise Fancybox
+Fancybox.bind('[data-fancybox="gallery"]', {
+  Carousel: {
+    on: {
+      change: (carousel, to) => {
+        // Sync Carousel slide
+        // ===
+        const $el = Fancybox.getInstance()
+          .getSlide()
+          .$trigger.closest(".carousel__slide");
+
+        const slide = mainCarousel.slides.find((slide) => {
+          return slide.$el === $el;
+        });
+
+        mainCarousel.slideTo(slide.index, {
+          friction: 0,
+        });
+      },
+    },
+  },
+});
+
 
     </script>
 

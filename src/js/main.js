@@ -109,3 +109,8 @@ $(document).ready(function() {
   });
 
 });
+
+
+$(document).ready(function() {
+  $("a.gallery").fancybox();
+});

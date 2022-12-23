@@ -12,8 +12,10 @@
       @include('partials/story2.html')
       <!--@include('partials/story.html')-->
 
-      @include('partials/certificates2.html')
-     <!-- @include('partials/certificates.html')-->
+      <!--@include('partials/certificates2.html')
+      @include('partials/certificates.html')-->
+
+      @include('partials/certificates3.html')
       @include('partials/open-cooperation.html')
     </main>
 
@@ -172,6 +174,35 @@ Fancybox.bind('[data-fancybox="gallery"]', {
         });
 
         mainCarousel.slideTo(slide.index, {
+          friction: 0,
+        });
+      },
+    },
+  },
+});
+
+
+const sertCarousel = new Carousel(document.querySelector("#sertCarousel"), {
+  infinite: false,
+  Navigation: false,
+});
+
+// Initialise Fancybox
+Fancybox.bind('[data-fancybox="gallerys"]', {
+  Carousel: {
+    on: {
+      change: (carousel, to) => {
+        // Sync Carousel slide
+        // ===
+        const $el = Fancybox.getInstance()
+          .getSlide()
+          .$trigger.closest(".carousel__slide");
+
+        const slide = sertCarousel.slides.find((slide) => {
+          return slide.$el === $el;
+        });
+
+        sertCarousel.slideTo(slide.index, {
           friction: 0,
         });
       },

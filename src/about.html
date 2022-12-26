@@ -60,7 +60,7 @@
 
         sync2
           .on('initialized.owl.carousel', function () {
-            sync2.find(".owl-item").eq(0).addClass("current");
+            sync2.find(".owl-item").eq(15).addClass("current");
           })
           .owlCarousel({
 
@@ -70,6 +70,7 @@
             slideSpeed: 500,
             slideBy: slidesPerPage, //alternatively you can slide by 1, this way the active slide will stick to the first item in the second carousel
             responsiveRefreshRate: 100,
+            startPosition: 13,
             responsive:{
                 0:{
                     items:1

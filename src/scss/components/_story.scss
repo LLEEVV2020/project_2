@@ -111,8 +111,9 @@
     margin-top: auto;
     margin-bottom: 10px;
     .img-header{
-      width: 53px !important;
+      width: 53px ;
       height: 56px;
+      border-radius: 10px;
     }
     & + .text-header{
       margin-top: 0;

@@ -106,6 +106,20 @@
     padding: 0 26px 0 33px;
     text-align: left;
   }
+  .img-header-wrapper{
+    padding: 0 26px 0 33px;
+    margin-top: auto;
+    margin-bottom: 10px;
+    .img-header{
+      width: 53px !important;
+      height: 56px;
+    }
+    & + .text-header{
+      margin-top: 0;
+    }
+  }
+
+
   .current{
     .text-header{
       font-weight: 500;

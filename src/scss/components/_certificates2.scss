@@ -48,6 +48,7 @@
     border-radius: 20px;
     opacity: 1;
   }
+
   &:hover{
     &::after{
       opacity: 0;
@@ -61,3 +62,46 @@
   display: flex;
   gap: 20px;
 }
+#mainCarousel{
+  a.item{
+    &:nth-child(1){
+      .certificates__item::after{
+        background-image: url(../img/dip1.png);
+      }
+
+    }
+    &:nth-child(2){
+      .certificates__item::after{
+        background-image: url(../img/dip2.png);
+      }
+    }
+    &:nth-child(3){
+      .certificates__item::after{
+        background-image: url(../img/dip3.png);
+      }
+    }
+  }
+}
+
+#sertCarousel{
+  a.item{
+    &:nth-child(1){
+      .certificates__item::after{
+        background-image: url(../img/sertifikat.png);
+      }
+
+    }
+    &:nth-child(2){
+      .certificates__item::after{
+        background-image: url(../img/sertifikat2.png);
+      }
+    }
+    &:nth-child(3){
+      .certificates__item::after{
+        background-image: url(../img/sertifikat3.png);
+      }
+    }
+  }
+}
+
+
